@@ -11,4 +11,8 @@ package hastaneotomasyonu;
  */
 public class Personel extends User{
     
+    public Personel(int id, String adisoyad) {
+        super(id, adisoyad);
+    }
+    
 }
