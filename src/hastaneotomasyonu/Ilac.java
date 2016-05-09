@@ -10,5 +10,7 @@ package hastaneotomasyonu;
  * @author burak
  */
 public class Ilac {
-    
+    String adi;
+    String etkenMadde;
+    String yanEtki;
 }
