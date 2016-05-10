@@ -9,12 +9,12 @@ package hastaneotomasyonu;
  *
  * @author burak
  */
-public class HastaKayit extends javax.swing.JFrame {
+public class PersonelGiris extends javax.swing.JFrame {
 
     /**
-     * Creates new form HastaKayit
+     * Creates new form PersonelGiris
      */
-    public HastaKayit() {
+    public PersonelGiris() {
         initComponents();
     }
 
@@ -27,48 +27,42 @@ public class HastaKayit extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(150, 60, 270, 20);
-        getContentPane().add(jTextField2);
-        jTextField2.setBounds(150, 100, 270, 20);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(150, 140, 270, 20);
+        jPasswordField1.setText("jPasswordField1");
+        getContentPane().add(jPasswordField1);
+        jPasswordField1.setBounds(180, 200, 300, 20);
 
-        jButton1.setText("Kayit Yap");
+        jLabel2.setText("Parola");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(80, 200, 100, 20);
+
+        jButton1.setText("Giriş");
         getContentPane().add(jButton1);
-        jButton1.setBounds(250, 280, 100, 23);
+        jButton1.setBounds(290, 250, 53, 23);
 
         jButton2.setText("Geri");
         getContentPane().add(jButton2);
-        jButton2.setBounds(501, 360, 80, 23);
+        jButton2.setBounds(520, 360, 51, 23);
 
-        jLabel2.setText("AD/SOYAD");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(80, 70, 70, 14);
-
-        jLabel3.setText("ID");
+        jLabel3.setText("Departman");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(80, 110, 70, 14);
+        jLabel3.setBounds(80, 110, 100, 30);
 
-        jLabel4.setText("Departman");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(80, 150, 70, 14);
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        getContentPane().add(jComboBox1);
+        jComboBox1.setBounds(180, 110, 300, 20);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hastaneotomasyonu/hastagirisi1.PNG"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hastaneotomasyonu/personel giris ekranı.PNG"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 600, 400);
 
@@ -92,20 +86,20 @@ public class HastaKayit extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(HastaKayit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PersonelGiris.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(HastaKayit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PersonelGiris.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(HastaKayit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PersonelGiris.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(HastaKayit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PersonelGiris.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new HastaKayit().setVisible(true);
+                new PersonelGiris().setVisible(true);
             }
         });
     }
@@ -117,8 +111,6 @@ public class HastaKayit extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JPasswordField jPasswordField1;
     // End of variables declaration//GEN-END:variables
 }
