@@ -16,6 +16,9 @@ public class PersonelGiris extends javax.swing.JFrame {
      */
     public PersonelGiris() {
         initComponents();
+        
+        this.setSize(600, 395);
+        this.setResizable(false);
     }
 
     /**

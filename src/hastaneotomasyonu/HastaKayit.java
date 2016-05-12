@@ -16,6 +16,9 @@ public class HastaKayit extends javax.swing.JFrame {
      */
     public HastaKayit() {
         initComponents();
+        
+        this.setSize(600, 395);
+        this.setResizable(false);
     }
 
     /**
