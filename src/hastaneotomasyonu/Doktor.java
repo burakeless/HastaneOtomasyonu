@@ -11,4 +11,14 @@ package hastaneotomasyonu;
  */
 public class Doktor extends Personel{
     
+    public Doktor(int id, String name, String departman) {
+        this.departman = departman;
+        this.name = name;
+        this.id = id;
+    }
+    
+    void sifreDegistir(String yeniSifre){
+        this.sifre = yeniSifre;
+    }
+    
 }

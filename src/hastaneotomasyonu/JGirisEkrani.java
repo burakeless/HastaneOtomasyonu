@@ -38,10 +38,20 @@ public class JGirisEkrani extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         jButton1.setText("Personel Girişi");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1);
         jButton1.setBounds(430, 190, 100, 50);
 
         jButton2.setText("Hasta Girişi");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2);
         jButton2.setBounds(70, 190, 100, 50);
 
@@ -51,6 +61,18 @@ public class JGirisEkrani extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        PersonelGiris a = new PersonelGiris();
+        HastaneOtomasyonu.changeFrame(this,a);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        HastaKayit b = new HastaKayit();
+        HastaneOtomasyonu.changeFrame(this, b);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

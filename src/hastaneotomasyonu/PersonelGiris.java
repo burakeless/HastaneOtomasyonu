@@ -5,12 +5,14 @@
  */
 package hastaneotomasyonu;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author burak
  */
 public class PersonelGiris extends javax.swing.JFrame {
-
+    ArrayList<Doktor> doktorlar;
     /**
      * Creates new form PersonelGiris
      */
@@ -19,6 +21,10 @@ public class PersonelGiris extends javax.swing.JFrame {
         
         this.setSize(600, 395);
         this.setResizable(false);
+        doktorlar = Departman.getDoktorlar();
+        for (int i = 0; i < doktorlar.size(); i++) {
+            System.out.println(doktorlar.get(i).departman);
+        }
     }
 
     /**

@@ -10,5 +10,18 @@ package hastaneotomasyonu;
  * @author burak
  */
 public class Personel extends User{
+    int id;
+    String name;
+    String departman;
+
+    public Personel() {
+    }
+ 
+    
+    public Personel(int id, String name, String departman) {
+        this.id = id;
+        this.name = name;
+        this.departman = departman;
+    }
     
 }

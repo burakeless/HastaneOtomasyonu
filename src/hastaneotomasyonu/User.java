@@ -10,5 +10,5 @@ package hastaneotomasyonu;
  * @author burak
  */
 public class User {
-    
+    String sifre = "1234";
 }
