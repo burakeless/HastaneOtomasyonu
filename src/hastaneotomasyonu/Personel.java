@@ -24,4 +24,8 @@ public class Personel extends User{
         this.departman = departman;
     }
     
+    public Personel(int id, String adisoyad) {
+        super(id, adisoyad);
+    }
+    
 }

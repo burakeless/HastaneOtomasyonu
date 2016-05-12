@@ -11,6 +11,7 @@ package hastaneotomasyonu;
  */
 public class Doktor extends Personel{
     
+<<<<<<< HEAD
     public Doktor(int id, String name, String departman) {
         this.departman = departman;
         this.name = name;
@@ -19,6 +20,10 @@ public class Doktor extends Personel{
     
     void sifreDegistir(String yeniSifre){
         this.sifre = yeniSifre;
+=======
+    public Doktor(int id, String adisoyad) {
+        super(id, adisoyad);
+>>>>>>> erol
     }
     
 }
