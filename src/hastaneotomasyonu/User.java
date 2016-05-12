@@ -10,6 +10,7 @@ package hastaneotomasyonu;
  * @author burak
  */
 public class User {
+<<<<<<< HEAD
     int id;
     String adisoyad;
 
@@ -18,4 +19,7 @@ public class User {
         this.adisoyad = adisoyad;
     }
     
+=======
+    String sifre = "1234";
+>>>>>>> burak
 }

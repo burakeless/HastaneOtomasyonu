@@ -9,12 +9,12 @@ package hastaneotomasyonu;
  *
  * @author burak
  */
-public class JGirisEkrani extends javax.swing.JFrame {
+public class HastaKayit extends javax.swing.JFrame {
 
     /**
-     * Creates new form JGirisEkrani
+     * Creates new form HastaKayit
      */
-    public JGirisEkrani() {
+    public HastaKayit() {
         initComponents();
         
         this.setSize(600, 395);
@@ -30,49 +30,53 @@ public class JGirisEkrani extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jComboBox1 = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(150, 60, 270, 20);
+        getContentPane().add(jTextField2);
+        jTextField2.setBounds(150, 100, 270, 20);
 
-        jButton1.setText("Personel Girişi");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        getContentPane().add(jComboBox1);
+        jComboBox1.setBounds(150, 140, 270, 20);
+
+        jButton1.setText("Kayit Yap");
         getContentPane().add(jButton1);
-        jButton1.setBounds(430, 190, 100, 50);
+        jButton1.setBounds(250, 280, 100, 23);
 
-        jButton2.setText("Hasta Girişi");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
+        jButton2.setText("Geri");
         getContentPane().add(jButton2);
-        jButton2.setBounds(70, 190, 100, 50);
+        jButton2.setBounds(501, 360, 80, 23);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hastaneotomasyonu/giris ekranı resim.png"))); // NOI18N
+        jLabel2.setText("AD/SOYAD");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(80, 70, 70, 14);
+
+        jLabel3.setText("ID");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(80, 110, 70, 14);
+
+        jLabel4.setText("Departman");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(80, 150, 70, 14);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hastaneotomasyonu/hastagirisi1.PNG"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 600, 395);
+        jLabel1.setBounds(0, 0, 600, 400);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        PersonelGiris a = new PersonelGiris();
-        HastaneOtomasyonu.changeFrame(this,a);
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        HastaKayit b = new HastaKayit();
-        HastaneOtomasyonu.changeFrame(this, b);
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -91,20 +95,20 @@ public class JGirisEkrani extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JGirisEkrani.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HastaKayit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JGirisEkrani.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HastaKayit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JGirisEkrani.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HastaKayit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JGirisEkrani.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HastaKayit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new JGirisEkrani().setVisible(true);
+                new HastaKayit().setVisible(true);
             }
         });
     }
@@ -112,6 +116,12 @@ public class JGirisEkrani extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
